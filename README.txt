@@ -11,7 +11,7 @@ You need to install the following dependencies:
 * `MTKBabel <http://www.rigacci.org/wiki/doku.php/doc/appunti/hardware/gps_logger_i_blue_747>`_; available in most distributions.
 
 Unpack the scripts in a suitable directory (e.g. ~/bin) and edit 
-the Configuration section, expecially the PORT variable. 
+the Configuration section, especially the PORT variable. 
 
 License
 -------
