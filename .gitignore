@@ -1,7 +1,8 @@
 *~
 Makefile
 Makefile.in*
-po/*.mo
+!po/Makefile.in
+po/*.gmo
 po/*.sed
 po/*.sin
 po/*.header
@@ -12,7 +13,6 @@ build-aux/
 config.log
 config.status
 configure
-m4/
 po/Makevars.template
 po/POTFILES
 po/Rules-quot

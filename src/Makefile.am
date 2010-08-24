@@ -1,6 +1,6 @@
 bin_SCRIPTS = gmtkbabel
 
-gmtkbabeldir = @datadir@
+gmtkbabeldir = $(pkgdatadir)
 gmtkbabel_DATA = \
 	common.sh \
 	download.sh \
