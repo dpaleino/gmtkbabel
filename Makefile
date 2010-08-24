@@ -23,6 +23,7 @@ update-po: $(SCRIPTS)
 installdirs:
 	$(INSTALL) -d $(DESTDIR)$(PREFIX)/share/gmtkbabel/
 	$(INSTALL) -d $(DESTDIR)$(PREFIX)/bin/
+	$(INSTALL) -d $(DESTDIR)/etc
 
 	for l in $(shell cat po/LINGUAS); do \
 	    $(INSTALL) -d $(DESTDIR)$(PREFIX)/share/locale/$$l/LC_MESSAGES/; \
@@ -31,6 +32,7 @@ installdirs:
 install: installdirs
 	$(INSTALL) src/gmtkbabel $(DESTDIR)$(PREFIX)/bin/
 	$(INSTALL) -m 644 src/*.sh $(DESTDIR)$(PREFIX)/share/gmtkbabel/
+	$(INSTALL) -m 644 gmtkbabel.conf $(DESTDIR)/etc/
 
 	for l in $(shell cat po/LINGUAS); do \
 	    msgfmt po/$$l.po -o po/$$l.mo; \
