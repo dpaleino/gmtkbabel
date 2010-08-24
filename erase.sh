@@ -7,8 +7,8 @@
 
 # ****** Strings ************************************************************* #
 
-S_TITLE="iBlue 747 erase"
-S_CONFIRM_ERASE="Erase logger memory?"
+S_TITLE=$"iBlue 747 erase"
+S_CONFIRM_ERASE=$"Erase logger memory?"
 
 # ****** Script (do not edit below this point) ******************************* #
 

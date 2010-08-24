@@ -1,0 +1,159 @@
+#: bash:10
+msgid "iBlue 747 set format"
+msgstr ""
+#: bash:12
+msgid "Select a profile"
+msgstr ""
+#: bash:14
+msgid "Preset"
+msgstr ""
+#: bash:15
+msgid "Description"
+msgstr ""
+#: bash:17
+msgid "Light"
+msgstr ""
+#: bash:18
+msgid "Essential fields, lots of points"
+msgstr ""
+#: bash:20
+msgid "Full"
+msgstr ""
+#: bash:21
+msgid "Everything: note that satellite data takes lots of space"
+msgstr ""
+#: bash:23
+msgid "No sat data"
+msgstr ""
+#: bash:24
+msgid "Everything except sat data, reasonable size"
+msgstr ""
+#: bash:26
+msgid "Custom"
+msgstr ""
+#: bash:27
+msgid "Select which fields should be saved"
+msgstr ""
+#: bash:29
+msgid "Select the fields you want the logger to save"
+msgstr ""
+#: bash:30
+msgid "Save?"
+msgstr ""
+#: bash:31
+msgid "Field"
+msgstr ""
+#: bash:32
+msgid "Description"
+msgstr ""
+#: bash:34
+msgid "Timestamp"
+msgstr ""
+#: bash:35
+msgid "Position fix"
+msgstr ""
+#: bash:36
+msgid "Latitude"
+msgstr ""
+#: bash:37
+msgid "Longitude"
+msgstr ""
+#: bash:38
+msgid ""
+msgstr ""
+#: bash:39
+msgid ""
+msgstr ""
+#: bash:40
+msgid ""
+msgstr ""
+#: bash:41
+msgid "DGPS Station ID Number."
+msgstr ""
+#: bash:42
+msgid "Number of seconds since last DGPS update."
+msgstr ""
+#: bash:43
+msgid ""
+msgstr ""
+#: bash:44
+msgid ""
+msgstr ""
+#: bash:45
+msgid ""
+msgstr ""
+#: bash:46
+msgid ""
+msgstr ""
+#: bash:47
+msgid ""
+msgstr ""
+#: bash:48
+msgid ""
+msgstr ""
+#: bash:49
+msgid ""
+msgstr ""
+#: bash:50
+msgid "Recording method"
+msgstr ""
+#: bash:51
+msgid ""
+msgstr ""
+#: bash:52
+msgid ""
+msgstr ""
+#: bash:10
+msgid "iBlue 747 Set Frequency"
+msgstr ""
+#: bash:11
+msgid "Log every n seconds (0 to disable)"
+msgstr ""
+#: bash:12
+msgid "Log every n meters (0 to disable)"
+msgstr ""
+#: bash:13
+msgid "Log over n km/h (0 to log at any speed)"
+msgstr ""
+#: bash:14
+msgid "On memory full"
+msgstr ""
+#: bash:15
+msgid "Stop logging"
+msgstr ""
+#: bash:16
+msgid "Overwrite older points"
+msgstr ""
+#: bash:10
+msgid "iBlue 747 download"
+msgstr ""
+#: bash:11
+msgid "It seems that the file exists: overwrite it?"
+msgstr ""
+#: bash:10
+msgid "iBlue 747 erase"
+msgstr ""
+#: bash:11
+msgid "Erase logger memory?"
+msgstr ""
+#: bash:8
+msgid "iBlue 747 manager"
+msgstr ""
+#: bash:9
+msgid "Select what to do"
+msgstr ""
+#: bash:11
+msgid "Action"
+msgstr ""
+#: bash:12
+msgid "Download data from the logger"
+msgstr ""
+#: bash:13
+msgid "Erase data in the logger"
+msgstr ""
+#: bash:14
+msgid "Set logging format"
+msgstr ""
+#: bash:15
+msgid "Set logging frequency"
+msgstr ""

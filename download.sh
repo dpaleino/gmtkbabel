@@ -7,8 +7,8 @@
 
 # ****** Strings ************************************************************* #
 
-S_TITLE="iBlue 747 download"
-S_CONFIRM_OVERWRITE="It seems that the file exists: overwrite it?"
+S_TITLE=$"iBlue 747 download"
+S_CONFIRM_OVERWRITE=$"It seems that the file exists: overwrite it?"
 
 # ****** Script (do not edit below this point) ******************************* #
 

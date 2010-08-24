@@ -7,13 +7,13 @@
 
 # ****** Strings ************************************************************* #
 
-S_TITLE="iBlue 747 Set Frequency"
-S_SELECT_TIME="Log every n seconds (0 to disable)"
-S_SELECT_DISTANCE="Log every n meters (0 to disable)"
-S_SELECT_SPEED="Log over n km/h (0 to log at any speed)"
-S_SELECT_FULL="On memory full"
-S_FULL_STOP="Stop logging"
-S_FULL_OVERLAP="Overwrite older points"
+S_TITLE=$"iBlue 747 Set Frequency"
+S_SELECT_TIME=$"Log every n seconds (0 to disable)"
+S_SELECT_DISTANCE=$"Log every n meters (0 to disable)"
+S_SELECT_SPEED=$"Log over n km/h (0 to log at any speed)"
+S_SELECT_FULL=$"On memory full"
+S_FULL_STOP=$"Stop logging"
+S_FULL_OVERLAP=$"Overwrite older points"
 
 # ****** Script (do not edit below this point) ******************************* #
 
