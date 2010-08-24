@@ -1,5 +1,6 @@
 INSTALL = install
 RM = rm
+PREFIX = /usr
 
 SCRIPTS = \
     src/download.sh \
@@ -20,13 +21,13 @@ update-po: $(SCRIPTS)
 	    $(SCRIPTS) -o po/gmtkbabel.pot
 
 installdirs:
-	$(INSTALL) -d $(DESTDIR)/usr/share/gmtkbabel/
-	$(INSTALL) -d $(DESTDIR)/usr/bin/
+	$(INSTALL) -d $(DESTDIR)$(PREFIX)/share/gmtkbabel/
+	$(INSTALL) -d $(DESTDIR)$(PREFIX)/bin/
 
 install: installdirs
-	$(INSTALL) src/gmtkbabel $(DESTDIR)/usr/bin/
-	$(INSTALL) src/*.sh $(DESTDIR)/usr/share/gmtkbabel/
+	$(INSTALL) src/gmtkbabel $(DESTDIR)$(PREFIX/bin/
+	$(INSTALL) src/*.sh $(DESTDIR)$(PREFIX)/share/gmtkbabel/
 
 uninstall:
-	$(RM) -rf $(DESTDIR)/usr/share/gmtkbabel/
-	$(RM) -rf $(DESTDIR)/usr/bin/gmtkbabel
+	$(RM) -rf $(DESTDIR)$(PREFIX)/share/gmtkbabel/
+	$(RM) -rf $(DESTDIR)$(PREFIX)/bin/gmtkbabel
