@@ -3,6 +3,7 @@
 # Copyright 2010 Elena Grandi
 # Released under 3-clause BSD license; see COPYING.txt for details.
 
+. /usr/share/gmtkbabel/common.sh
 . gmtkbabel.conf
 
 # ****** Strings ************************************************************* #
