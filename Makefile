@@ -6,10 +6,13 @@ SCRIPTS = set_format.sh set_frequency.sh download.sh erase.sh gmtkbabel
 all:
 
 update-po: $(SCRIPTS)
-	$(RM) po/gmtkbabel.pot
-	for i in $(SCRIPTS); do \
-	    bash --dump-po-strings < $$i >> po/gmtkbabel.pot ; \
-	done
+	$(RM) -f po/gmtkbabel.pot
+	xgettext --language=shell --from-code=utf-8 \
+	    --copyright-holder="David Paleino <d.paleino@gmail.com>" \
+	    --package-name="gmtkbabel" \
+	    --package-version="0.1" \
+	    --msgid-bugs-address="d.paleino@gmail.com" \
+	    $(SCRIPTS) -o po/gmtkbabel.pot
 
 installdirs:
 	$(INSTALL) -d $(DESTDIR)/usr/share/gmtkbabel/
