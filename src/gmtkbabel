@@ -7,14 +7,14 @@
 
 # ****** Strings ************************************************************* #
 
-S_TITLE=$"iBlue 747 manager"
-S_TEXT=$"Select what to do"
+S_TITLE="`gettext \"iBlue 747 manager\"`"
+S_TEXT="`gettext \"Select what to do\"`"
 
-S_PRESET_TITLE=$"Action"
-S_DOWNLOAD=$"Download data from the logger"
-S_ERASE=$"Erase data in the logger"
-S_SETFORMAT=$"Set logging format"
-S_SETFREQUENCY=$"Set logging frequency"
+S_PRESET_TITLE="`gettext \"Action\"`"
+S_DOWNLOAD="`gettext \"Download data from the logger\"`"
+S_ERASE="`gettext \"Erase data in the logger\"`"
+S_SETFORMAT="`gettext \"Set logging format\"`"
+S_SETFREQUENCY="`gettext \"Set logging frequency\"`"
 
 # ****** Script (do not edit below this point) ******************************* #
 

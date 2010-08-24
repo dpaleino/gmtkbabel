@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gmtkbabel 0.1\n"
 "Report-Msgid-Bugs-To: d.paleino@gmail.com\n"
-"POT-Creation-Date: 2010-08-24 17:06+0200\n"
+"POT-Creation-Date: 2010-08-25 01:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,162 +17,162 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: set_format.sh:11
-msgid "iBlue 747 set format"
-msgstr ""
-
-#: set_format.sh:13
-msgid "Select a profile"
-msgstr ""
-
-#: set_format.sh:15
-msgid "Preset"
-msgstr ""
-
-#: set_format.sh:16 set_format.sh:33
-msgid "Description"
-msgstr ""
-
-#: set_format.sh:18
-msgid "Light"
-msgstr ""
-
-#: set_format.sh:19
-msgid "Essential fields, lots of points"
-msgstr ""
-
-#: set_format.sh:21
-msgid "Full"
-msgstr ""
-
-#: set_format.sh:22
-msgid "Everything: note that satellite data takes lots of space"
-msgstr ""
-
-#: set_format.sh:24
-msgid "No sat data"
-msgstr ""
-
-#: set_format.sh:25
-msgid "Everything except sat data, reasonable size"
-msgstr ""
-
-#: set_format.sh:27
-msgid "Custom"
-msgstr ""
-
-#: set_format.sh:28
-msgid "Select which fields should be saved"
-msgstr ""
-
-#: set_format.sh:30
-msgid "Select the fields you want the logger to save"
-msgstr ""
-
-#: set_format.sh:31
-msgid "Save?"
-msgstr ""
-
-#: set_format.sh:32
-msgid "Field"
-msgstr ""
-
-#: set_format.sh:35
-msgid "Timestamp"
-msgstr ""
-
-#: set_format.sh:36
-msgid "Position fix"
-msgstr ""
-
-#: set_format.sh:37
-msgid "Latitude"
-msgstr ""
-
-#: set_format.sh:38
-msgid "Longitude"
-msgstr ""
-
-#: set_format.sh:42
-msgid "DGPS Station ID Number."
-msgstr ""
-
-#: set_format.sh:43
-msgid "Number of seconds since last DGPS update."
-msgstr ""
-
-#: set_format.sh:51
-msgid "Recording method"
-msgstr ""
-
-#: set_frequency.sh:11
-msgid "iBlue 747 Set Frequency"
-msgstr ""
-
-#: set_frequency.sh:12
-msgid "Log every n seconds (0 to disable)"
-msgstr ""
-
-#: set_frequency.sh:13
-msgid "Log every n meters (0 to disable)"
-msgstr ""
-
-#: set_frequency.sh:14
-msgid "Log over n km/h (0 to log at any speed)"
-msgstr ""
-
-#: set_frequency.sh:15
-msgid "On memory full"
-msgstr ""
-
-#: set_frequency.sh:16
-msgid "Stop logging"
-msgstr ""
-
-#: set_frequency.sh:17
-msgid "Overwrite older points"
-msgstr ""
-
-#: download.sh:11
+#: src/download.sh:10
 msgid "iBlue 747 download"
 msgstr ""
 
-#: download.sh:12
+#: src/download.sh:11
 msgid "It seems that the file exists: overwrite it?"
 msgstr ""
 
-#: erase.sh:11
+#: src/erase.sh:10
 msgid "iBlue 747 erase"
 msgstr ""
 
-#: erase.sh:12
+#: src/erase.sh:11
 msgid "Erase logger memory?"
 msgstr ""
 
-#: gmtkbabel:8
+#: src/gmtkbabel:10
 msgid "iBlue 747 manager"
 msgstr ""
 
-#: gmtkbabel:9
+#: src/gmtkbabel:11
 msgid "Select what to do"
 msgstr ""
 
-#: gmtkbabel:11
+#: src/gmtkbabel:13
 msgid "Action"
 msgstr ""
 
-#: gmtkbabel:12
+#: src/gmtkbabel:14
 msgid "Download data from the logger"
 msgstr ""
 
-#: gmtkbabel:13
+#: src/gmtkbabel:15
 msgid "Erase data in the logger"
 msgstr ""
 
-#: gmtkbabel:14
+#: src/gmtkbabel:16
 msgid "Set logging format"
 msgstr ""
 
-#: gmtkbabel:15
+#: src/gmtkbabel:17
 msgid "Set logging frequency"
+msgstr ""
+
+#: src/set_format.sh:10
+msgid "iBlue 747 set format"
+msgstr ""
+
+#: src/set_format.sh:12
+msgid "Select a profile"
+msgstr ""
+
+#: src/set_format.sh:14
+msgid "Preset"
+msgstr ""
+
+#: src/set_format.sh:15 src/set_format.sh:32
+msgid "Description"
+msgstr ""
+
+#: src/set_format.sh:17
+msgid "Light"
+msgstr ""
+
+#: src/set_format.sh:18
+msgid "Essential fields, lots of points"
+msgstr ""
+
+#: src/set_format.sh:20
+msgid "Full"
+msgstr ""
+
+#: src/set_format.sh:21
+msgid "Everything: note that satellite data takes lots of space"
+msgstr ""
+
+#: src/set_format.sh:23
+msgid "No sat data"
+msgstr ""
+
+#: src/set_format.sh:24
+msgid "Everything except sat data, reasonable size"
+msgstr ""
+
+#: src/set_format.sh:26
+msgid "Custom"
+msgstr ""
+
+#: src/set_format.sh:27
+msgid "Select which fields should be saved"
+msgstr ""
+
+#: src/set_format.sh:29
+msgid "Select the fields you want the logger to save"
+msgstr ""
+
+#: src/set_format.sh:30
+msgid "Save?"
+msgstr ""
+
+#: src/set_format.sh:31
+msgid "Field"
+msgstr ""
+
+#: src/set_format.sh:34
+msgid "Timestamp"
+msgstr ""
+
+#: src/set_format.sh:35
+msgid "Position fix"
+msgstr ""
+
+#: src/set_format.sh:36
+msgid "Latitude"
+msgstr ""
+
+#: src/set_format.sh:37
+msgid "Longitude"
+msgstr ""
+
+#: src/set_format.sh:41
+msgid "DGPS Station ID Number."
+msgstr ""
+
+#: src/set_format.sh:42
+msgid "Number of seconds since last DGPS update."
+msgstr ""
+
+#: src/set_format.sh:50
+msgid "Recording method"
+msgstr ""
+
+#: src/set_frequency.sh:10
+msgid "iBlue 747 Set Frequency"
+msgstr ""
+
+#: src/set_frequency.sh:11
+msgid "Log every n seconds (0 to disable)"
+msgstr ""
+
+#: src/set_frequency.sh:12
+msgid "Log every n meters (0 to disable)"
+msgstr ""
+
+#: src/set_frequency.sh:13
+msgid "Log over n km/h (0 to log at any speed)"
+msgstr ""
+
+#: src/set_frequency.sh:14
+msgid "On memory full"
+msgstr ""
+
+#: src/set_frequency.sh:15
+msgid "Stop logging"
+msgstr ""
+
+#: src/set_frequency.sh:16
+msgid "Overwrite older points"
 msgstr ""

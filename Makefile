@@ -9,7 +9,7 @@ SCRIPTS = \
     src/set_format.sh \
     src/set_frequency.sh
 
-all:
+all: update-po
 
 update-po: $(SCRIPTS)
 	$(RM) -f po/gmtkbabel.pot
