@@ -4,6 +4,8 @@ AM_INIT_AUTOMAKE([foreign -Wall -Werror])
 AM_GNU_GETTEXT_VERSION([0.18.1])
 AM_GNU_GETTEXT([external])
 
+AC_PREFIX_DEFAULT([/usr])
+
 AC_CHECK_PROGS([BASH], [bash], [:])
 if test "$BASH" = :; then
     AC_MSG_ERROR([This package needs bash.])
