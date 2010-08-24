@@ -1,7 +1,12 @@
 INSTALL = install
 RM = rm
 
-SCRIPTS = set_format.sh set_frequency.sh download.sh erase.sh gmtkbabel
+SCRIPTS = \
+    src/download.sh \
+    src/erase.sh \
+    src/gmtkbabel \
+    src/set_format.sh \
+    src/set_frequency.sh
 
 all:
 
@@ -19,8 +24,8 @@ installdirs:
 	$(INSTALL) -d $(DESTDIR)/usr/bin/
 
 install: installdirs
-	$(INSTALL) gmtkbabel $(DESTDIR)/usr/bin/
-	$(INSTALL) *.sh $(DESTDIR)/usr/share/gmtkbabel/
+	$(INSTALL) src/gmtkbabel $(DESTDIR)/usr/bin/
+	$(INSTALL) src/*.sh $(DESTDIR)/usr/share/gmtkbabel/
 
 uninstall:
 	$(RM) -rf $(DESTDIR)/usr/share/gmtkbabel/
