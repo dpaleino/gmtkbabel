@@ -1,0 +1,12 @@
+0.0~20100824
+------------
+
+First release by Elena Grandi, available on
+
+  http://www.trueelena.org/computers/scripts/gmtkbabel.html
+
+Features:
+
+  - scripts can be used in-place, not meant for system-widec
+    installation
+  - self-contained scripts, everything needed is inside them!

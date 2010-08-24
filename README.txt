@@ -1,0 +1,22 @@
+This is a set of simple scripts that give a graphical interface 
+to the most used options of MTKBabel, an excellent command line program 
+to manage i-Blue 747 GPS data loggers and other MTK based devices.
+
+Installation
+------------
+
+You need to install the following dependencies:
+
+* `Zenity <http://live.gnome.org/Zenity>`_; usually preinstalled with GNOME
+* `MTKBabel <http://www.rigacci.org/wiki/doku.php/doc/appunti/hardware/gps_logger_i_blue_747>`_; available in most distributions.
+
+Unpack the scripts in a suitable directory (e.g. ~/bin) and edit 
+the Configuration section, expecially the PORT variable. 
+
+License
+-------
+
+These scripts are relased under the 3-clause BSD license. 
+If you plan to distribute it and its dependencies, remember that both 
+mtkbabel and zenity are released under the GNU GPL.
+
