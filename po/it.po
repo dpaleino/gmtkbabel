@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gmtkbabel 0.1\n"
-"Report-Msgid-Bugs-To: d.paleino+gmtkbabel@gmail.com\n"
+"Report-Msgid-Bugs-To: d.paleino@gmail.com\n"
 "POT-Creation-Date: 2010-08-24 19:05+0200\n"
 "PO-Revision-Date: 2010-08-24 19:17+0100\n"
 "Last-Translator: David Paleino <dapal@debian.org>\n"
