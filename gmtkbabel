@@ -25,11 +25,31 @@ case `zenity --list --title="$S_TITLE" --text="$S_TEXT" \
     "$S_SETFORMAT" \
     "$S_SETFREQUENCY" ` in
     "$S_DOWNLOAD" )
-        ./download.sh ;;
+        if [ -r download.sh ]; then
+            ./download.sh
+        elif [ -r /usr/share/gmtkbabel/download.sh ]; then
+            exec -a gmtkbabel bash /usr/share/gmtkbabel/download.sh
+        fi
+        ;;
     "$S_ERASE" )
-        ./erase.sh ;;
+        if [ -r erase.sh ]; then
+            ./erase.sh
+        elif [ -r /usr/share/gmtkbabel/erase.sh ]; then
+            exec -a gmtkbabel bash /usr/share/gmtkbabel/erase.sh
+        fi
+        ;;
     "$S_SETFORMAT" )
-        ./set_format.sh ;;
+        if [ -r set_format.sh ]; then
+            ./set_format.sh
+        elif [ -r /usr/share/gmtkbabel/set_format.sh ]; then
+            exec -a gmtkbabel bash /usr/share/gmtkbabel/set_format.sh
+        fi
+        ;;
     "$S_SETFREQUENCY" )
-        ./set_frequency.sh ;;
+        if [ -r set_frequency.sh ]; then
+            ./set_frequency.sh
+        elif [ -r /usr/share/gmtkbabel/set_frequency.sh ]; then
+            exec -a gmtkbabel bash /usr/share/gmtkbabel/set_frequency.sh
+        fi
+        ;;
 esac
