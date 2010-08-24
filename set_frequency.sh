@@ -3,10 +3,7 @@
 # Copyright 2010 Elena Grandi
 # Released under 3-clause BSD license; see COPYING.txt for details.
 
-# ****** Configuration ******************************************************* #
-
-# Logger device
-PORT=/dev/ttyACM0
+. gmtkbabel.conf
 
 # ****** Strings ************************************************************* #
 

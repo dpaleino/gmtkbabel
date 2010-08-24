@@ -3,16 +3,7 @@
 # Copyright 2010 Elena Grandi
 # Released under 3-clause BSD license; see COPYING.txt for details.
 
-# ****** Configuration ******************************************************* #
-
-# Logger device
-PORT=/dev/ttyACM0
-
-# Default log directory
-DIR=~
-
-# Default log *base* file
-FNAME=`date +%Y-%m-%d_%H:%M`
+. gmtkbabel.conf
 
 # ****** Strings ************************************************************* #
 
