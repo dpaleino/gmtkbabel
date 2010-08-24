@@ -1,0 +1,8 @@
+DOMAIN = $(PACKAGE)
+subdir = po
+top_builddir = ..
+
+XGETTEXT_OPTIONS = --language=shell --from-code=utf8 --package-name=$(PACKAGE) --package-version=$(VERSION)
+COPYRIGHT_HOLDER = David Paleino <d.paleino@gmail.com>
+MSGID_BUGS_ADDRESS = $(PACKAGE_BUGREPORT)
+EXTRA_LOCALE_CATEGORIES =
