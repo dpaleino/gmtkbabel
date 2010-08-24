@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# © 2010, David Paleino <dapal@debian.org>
+# Released under 3-clause BSD license; see COPYING.txt for details.
+
+# ****** Strings ************************************************************* #
+
+S_TITLE="iBlue 747 manager"
+S_TEXT="Select what to do"
+
+S_PRESET_TITLE="Action"
+S_DOWNLOAD="Download data from the logger"
+S_ERASE="Erase data in the logger"
+S_SETFORMAT="Set logging format"
+S_SETFREQUENCY="Set logging frequency"
+
+# ****** Script (do not edit below this point) ******************************* #
+
+case `zenity --list --title="$S_TITLE" --text="$S_TEXT" \
+    --column "$S_PRESET_TITLE" \
+    "$S_DOWNLOAD" \
+    "$S_ERASE" \
+    "$S_SETFORMAT" \
+    "$S_SETFREQUENCY" ` in
+    "$S_DOWNLOAD" )
+        ./download.sh ;;
+    "$S_ERASE" )
+        ./erase.sh ;;
+    "$S_SETFORMAT" )
+        ./set_format.sh ;;
+    "$S_SETFREQUENCY" )
+        ./set_frequency.sh ;;
+esac
