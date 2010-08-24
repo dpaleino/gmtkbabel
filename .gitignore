@@ -1,6 +1,7 @@
 *~
 Makefile
 Makefile.in*
+po/*.mo
 po/*.sed
 po/*.sin
 po/*.header
