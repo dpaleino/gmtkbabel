@@ -4,7 +4,6 @@
 # Released under 3-clause BSD license; see COPYING.txt for details.
 
 . /usr/share/gmtkbabel/common.sh
-. gmtkbabel.conf
 
 # ****** Strings ************************************************************* #
 

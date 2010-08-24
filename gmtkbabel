@@ -3,6 +3,8 @@
 # © 2010, David Paleino <dapal@debian.org>
 # Released under 3-clause BSD license; see COPYING.txt for details.
 
+. /usr/share/gmtkbabel/common.sh
+
 # ****** Strings ************************************************************* #
 
 S_TITLE=$"iBlue 747 manager"
