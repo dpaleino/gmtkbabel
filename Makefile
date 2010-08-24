@@ -26,7 +26,7 @@ installdirs:
 
 install: installdirs
 	$(INSTALL) src/gmtkbabel $(DESTDIR)$(PREFIX)/bin/
-	$(INSTALL) src/*.sh $(DESTDIR)$(PREFIX)/share/gmtkbabel/
+	$(INSTALL) -m 644 src/*.sh $(DESTDIR)$(PREFIX)/share/gmtkbabel/
 
 uninstall:
 	$(RM) -rf $(DESTDIR)$(PREFIX)/share/gmtkbabel/
