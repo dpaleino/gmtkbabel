@@ -17,3 +17,8 @@ po/Makevars.template
 po/POTFILES
 po/Rules-quot
 po/stamp-po
+
+m4/
+!m4/gettext.m4
+!m4/nls.m4
+!m4/po.m4
