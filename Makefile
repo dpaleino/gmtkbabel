@@ -1,6 +1,7 @@
 INSTALL = install
 RM = rm
 PREFIX = /usr
+VERSION = 0.1
 
 SCRIPTS = \
     src/download.sh \
@@ -21,7 +22,7 @@ update-po: $(SCRIPTS)
 	xgettext --language=shell --from-code=utf-8 \
 	    --copyright-holder="David Paleino <d.paleino@gmail.com>" \
 	    --package-name="gmtkbabel" \
-	    --package-version="0.1" \
+	    --package-version="$(VERSION)" \
 	    --msgid-bugs-address="d.paleino@gmail.com" \
 	    $(SCRIPTS) -o po/gmtkbabel.pot
 	for l in $(shell cat po/LINGUAS); do \
@@ -59,3 +60,7 @@ uninstall:
 clean:
 	$(RM) -rf po/*.mo
 	$(RM) -rf gmtkbabel.1.gz
+
+dist:
+	git archive --format=tar --prefix=gmtkbabel-$(VERSION)/ $(VERSION) | \
+	    gzip -9 > gmtkbabel-$(VERSION).tar.gz
