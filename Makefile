@@ -9,7 +9,13 @@ SCRIPTS = \
     src/set_format.sh \
     src/set_frequency.sh
 
-all: update-po
+all: build
+
+build: update-po
+	for l in $(shell cat po/LINGUAS); do \
+	    msgfmt po/$$l.po -o po/$$l.mo; \
+	done
+	gzip -9 gmtkbabel.1
 
 update-po: $(SCRIPTS)
 	xgettext --language=shell --from-code=utf-8 \
@@ -32,18 +38,16 @@ installdirs:
 	    $(INSTALL) -d $(DESTDIR)$(PREFIX)/share/locale/$$l/LC_MESSAGES/; \
 	done
 
-install: installdirs
+install: build installdirs
 	$(INSTALL) src/gmtkbabel $(DESTDIR)$(PREFIX)/bin/
 	$(INSTALL) -m 644 src/*.sh $(DESTDIR)$(PREFIX)/share/gmtkbabel/
 	$(INSTALL) -m 644 gmtkbabel.conf $(DESTDIR)/etc/
 
 	for l in $(shell cat po/LINGUAS); do \
-	    msgfmt po/$$l.po -o po/$$l.mo; \
 	    $(INSTALL) -m 644 po/$$l.mo \
 	        $(DESTDIR)$(PREFIX)/share/locale/$$l/LC_MESSAGES/gmtkbabel.mo; \
 	done
 
-	gzip -9 gmtkbabel.1
 	$(INSTALL) -m 644 gmtkbabel.1.gz $(DESTDIR)$(PREFIX)/share/man/man1/
 
 uninstall:
