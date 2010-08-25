@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gmtkbabel 0.1\n"
 "Report-Msgid-Bugs-To: d.paleino@gmail.com\n"
-"POT-Creation-Date: 2010-08-24 19:05+0200\n"
+"POT-Creation-Date: 2010-08-25 08:37+0200\n"
 "PO-Revision-Date: 2010-08-24 19:17+0100\n"
 "Last-Translator: David Paleino <dapal@debian.org>\n"
 "Language-Team: Italian\n"
@@ -17,6 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/download.sh:10
+msgid "iBlue 747 download"
+msgstr "Download iBlue 747"
+
+#: src/download.sh:11
+msgid "It seems that the file exists: overwrite it?"
+msgstr "Sembra che il file esista: sovrascriverlo?"
+
+#: src/download.sh:12
+msgid "Operation cancelled"
+msgstr "Operazione annullata"
+
+#: src/erase.sh:10
+msgid "iBlue 747 erase"
+msgstr "Cancellazione iBlue 747"
+
+#: src/erase.sh:11
+msgid "Erase logger memory?"
+msgstr "Cancellare la memoria del logger?"
 
 #: src/gmtkbabel:10
 msgid "iBlue 747 manager"
@@ -46,22 +66,6 @@ msgstr "Imposta formato del log"
 msgid "Set logging frequency"
 msgstr "Imposta frequenza del log"
 
-#: src/download.sh:10
-msgid "iBlue 747 download"
-msgstr "Download iBlue 747"
-
-#: src/download.sh:11
-msgid "It seems that the file exists: overwrite it?"
-msgstr "Sembra che il file esista: sovrascriverlo?"
-
-#: src/erase.sh:10
-msgid "iBlue 747 erase"
-msgstr "Cancellazione iBlue 747"
-
-#: src/erase.sh:11
-msgid "Erase logger memory?"
-msgstr "Cancellare la memoria del logger?"
-
 #: src/set_format.sh:10
 msgid "iBlue 747 set format"
 msgstr "Impostazione formato iBlue 747"
@@ -74,8 +78,7 @@ msgstr "Scegli un profilo"
 msgid "Preset"
 msgstr "Profilo"
 
-#: src/set_format.sh:15
-#: src/set_format.sh:32
+#: src/set_format.sh:15 src/set_format.sh:32
 msgid "Description"
 msgstr "Descrizione"
 
@@ -178,4 +181,3 @@ msgstr "Ferma la registrazione"
 #: src/set_frequency.sh:16
 msgid "Overwrite older points"
 msgstr "Sovrascrivi i punti più vecchi"
-
