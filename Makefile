@@ -26,6 +26,7 @@ installdirs:
 	$(INSTALL) -d $(DESTDIR)$(PREFIX)/share/gmtkbabel/
 	$(INSTALL) -d $(DESTDIR)$(PREFIX)/bin/
 	$(INSTALL) -d $(DESTDIR)/etc
+	$(INSTALL) -d $(DESTDIR)$(PREFIX)/share/man/man1/
 
 	for l in $(shell cat po/LINGUAS); do \
 	    $(INSTALL) -d $(DESTDIR)$(PREFIX)/share/locale/$$l/LC_MESSAGES/; \
@@ -42,10 +43,15 @@ install: installdirs
 	        $(DESTDIR)$(PREFIX)/share/locale/$$l/LC_MESSAGES/gmtkbabel.mo; \
 	done
 
+	gzip -9 gmtkbabel.1
+	$(INSTALL) -m 644 gmtkbabel.1.gz $(DESTDIR)$(PREFIX)/share/man/man1/
+
 uninstall:
 	$(RM) -rf $(DESTDIR)$(PREFIX)/share/gmtkbabel/
 	$(RM) -rf $(DESTDIR)$(PREFIX)/bin/gmtkbabel
 	find $(DESTDIR)$(PREFIX)/share/locale -name "gmtkbabel.mo" -delete
+	$(RM) -rf $(DESTDIR)$(PREFIX)/share/man/man1/gmtkbabel.1.gz
 
 clean:
 	$(RM) -rf po/*.mo
+	$(RM) -rf gmtkbabel.1.gz
