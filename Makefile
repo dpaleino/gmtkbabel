@@ -15,7 +15,7 @@ build: update-po
 	for l in $(shell cat po/LINGUAS); do \
 	    msgfmt po/$$l.po -o po/$$l.mo; \
 	done
-	gzip -9 gmtkbabel.1
+	gzip -9c gmtkbabel.1 > gmtkbabel.1.gz
 
 update-po: $(SCRIPTS)
 	xgettext --language=shell --from-code=utf-8 \
