@@ -1,3 +1,19 @@
+0.1
+---
+
+Upstream changed, now David Paleino takes care of the package.
+The project moved to github, and is now reachable at
+
+  http://dpaleino.github.com/gmtkbabel/
+
+Features:
+
+  - localization support
+    + it.po: Italian translation
+  - added simple Makefile
+  - added manpage
+
+
 0.0~20100824
 ------------
 
