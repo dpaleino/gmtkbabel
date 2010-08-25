@@ -9,6 +9,7 @@
 
 S_TITLE="`gettext \"iBlue 747 download\"`"
 S_CONFIRM_OVERWRITE="`gettext \"It seems that the file exists: overwrite it?\"`"
+S_CANCEL="`gettext \"Operation cancelled\"`"
 
 # ****** Script (do not edit below this point) ******************************* #
 
@@ -25,6 +26,10 @@ then
     fi
 fi
 
-mtkbabel -p $PORT -l off -f "$TRK_NAME" -w -t >> "$TRK_NAME".log
-mtkbabel -p $PORT -l on >> "$TRK_NAME".log
+if [ -n "$TRK_NAME" ]; then
+    mtkbabel -p $PORT -l off -f "$TRK_NAME" -w -t >> "$TRK_NAME".log
+    mtkbabel -p $PORT -l on >> "$TRK_NAME".log
+else
+    zenity --error "$S_CANCEL"
+fi
 

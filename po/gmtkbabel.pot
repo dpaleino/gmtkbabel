@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gmtkbabel 0.1\n"
 "Report-Msgid-Bugs-To: d.paleino@gmail.com\n"
-"POT-Creation-Date: 2010-08-25 01:03+0200\n"
+"POT-Creation-Date: 2010-08-25 08:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,10 @@ msgstr ""
 
 #: src/download.sh:11
 msgid "It seems that the file exists: overwrite it?"
+msgstr ""
+
+#: src/download.sh:12
+msgid "Operation cancelled"
 msgstr ""
 
 #: src/erase.sh:10
