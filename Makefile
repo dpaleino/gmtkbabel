@@ -12,13 +12,15 @@ SCRIPTS = \
 all: update-po
 
 update-po: $(SCRIPTS)
-	$(RM) -f po/gmtkbabel.pot
 	xgettext --language=shell --from-code=utf-8 \
 	    --copyright-holder="David Paleino <d.paleino@gmail.com>" \
 	    --package-name="gmtkbabel" \
 	    --package-version="0.1" \
 	    --msgid-bugs-address="d.paleino@gmail.com" \
 	    $(SCRIPTS) -o po/gmtkbabel.pot
+	for l in $(shell cat po/LINGUAS); do \
+	    msgmerge --update --backup=none po/$$l.po po/gmtkbabel.pot; \
+	done
 
 installdirs:
 	$(INSTALL) -d $(DESTDIR)$(PREFIX)/share/gmtkbabel/
