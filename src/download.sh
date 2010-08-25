@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# Copyright 2010 Elena Grandi
-# Released under 3-clause BSD license; see COPYING.txt for details.
+# Copyright © 2010, Elena Grandi
+# Copyright © 2010, David Paleino <d.paleino@gmail.com>
+#
+# Released under 3-clause BSD license; see COPYING for details.
 
 . /usr/share/gmtkbabel/common.sh
 

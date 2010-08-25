@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# © 2010, David Paleino <dapal@debian.org>
-# Released under 3-clause BSD license; see COPYING.txt for details.
+# Copyright © 2010, David Paleino <d.paleino@gmail.com>
+#
+# Released under 3-clause BSD license; see COPYING for details.
 
 . /usr/share/gmtkbabel/common.sh
 

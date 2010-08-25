@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# Copyright 2010 Elena Grandi
-# Released under 3-clause BSD license; see COPYING.txt for details.
+# Copyright © 2010, Elena Grandi
+# Copyright © 2010, David Paleino <d.paleino@gmail.com>
+#
+# Released under 3-clause BSD license; see COPYING for details.
 
 . /usr/share/gmtkbabel/common.sh
 
@@ -94,4 +96,3 @@ case `zenity --list --title="$S_TITLE" --text="$S_PRESET" \
             mtkbabel -p $PORT -o $FIELDS
         fi ;;
 esac
-
