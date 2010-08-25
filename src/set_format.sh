@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Copyright © 2010, Elena Grandi
 # Copyright © 2010, David Paleino <d.paleino@gmail.com>
@@ -60,7 +60,7 @@ case `zenity --list --title="$S_TITLE" --text="$S_PRESET" \
     "$S_P_LIGHT"  "$S_P_LIGHT_D" \
     "$S_P_FULL"   "$S_P_FULL_D" \
     "$S_P_NOSAT"  "$S_P_NOSAT_D" \
-    "$S_P_CUSTOM" "$S_P_CUSTOM_D" ` in 
+    "$S_P_CUSTOM" "$S_P_CUSTOM_D" ` in
     "$S_P_LIGHT" )
         mtkbabel -p $PORT -o UTC,VALID,LATITUDE,LONGITUDE,-HEIGHT,SPEED,-HEADING,-DSTA,-DAGE,-PDOP,-HDOP,-VDOP,-NSAT,-SID,-ELEVATION,-AZIMUTH,-SNR,RCR,-MILLISECOND,-DISTANCE -l on ;;
     "$S_P_FULL" )

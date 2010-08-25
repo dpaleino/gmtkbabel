@@ -12,6 +12,7 @@ Features:
     + it.po: Italian translation
   - added simple Makefile
   - added manpage
+  - dropped dependency on bash, just a POSIX sh is needed now
 
 
 0.0~20100824

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Copyright © 2010, David Paleino <d.paleino@gmail.com>
 #
@@ -29,28 +29,28 @@ case `zenity --list --title="$S_TITLE" --text="$S_TEXT" \
         if [ -r download.sh ]; then
             ./download.sh
         elif [ -r /usr/share/gmtkbabel/download.sh ]; then
-            exec -a gmtkbabel bash /usr/share/gmtkbabel/download.sh
+            exec sh /usr/share/gmtkbabel/download.sh
         fi
         ;;
     "$S_ERASE" )
         if [ -r erase.sh ]; then
             ./erase.sh
         elif [ -r /usr/share/gmtkbabel/erase.sh ]; then
-            exec -a gmtkbabel bash /usr/share/gmtkbabel/erase.sh
+            exec sh /usr/share/gmtkbabel/erase.sh
         fi
         ;;
     "$S_SETFORMAT" )
         if [ -r set_format.sh ]; then
             ./set_format.sh
         elif [ -r /usr/share/gmtkbabel/set_format.sh ]; then
-            exec -a gmtkbabel bash /usr/share/gmtkbabel/set_format.sh
+            exec sh /usr/share/gmtkbabel/set_format.sh
         fi
         ;;
     "$S_SETFREQUENCY" )
         if [ -r set_frequency.sh ]; then
             ./set_frequency.sh
         elif [ -r /usr/share/gmtkbabel/set_frequency.sh ]; then
-            exec -a gmtkbabel bash /usr/share/gmtkbabel/set_frequency.sh
+            exec sh /usr/share/gmtkbabel/set_frequency.sh
         fi
         ;;
 esac

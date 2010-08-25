@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Copyright © 2010, Elena Grandi
 # Copyright © 2010, David Paleino <d.paleino@gmail.com>
