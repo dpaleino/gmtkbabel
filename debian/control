@@ -4,12 +4,10 @@ Priority: optional
 Maintainer: David Paleino <dapal@debian.org>
 Build-Depends: debhelper (>= 7.0.50~)
  , gettext
- , gzip
 Standards-Version: 3.9.1
 Homepage: http://dpaleino.github.com/gmtkbabel
 Vcs-Git: git://github.com/dpaleino/gmtkbabel.git
 Vcs-Browser: http://github.com/dpaleino/gmtkbabel
-http://git.debian.org/?p=collab-maint/gmtkbabel.git;a=summary
 
 Package: gmtkbabel
 Architecture: all
