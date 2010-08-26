@@ -19,6 +19,9 @@ S_FULL_OVERLAP="`gettext \"Overwrite older points\"`"
 
 # ****** Script (do not edit below this point) ******************************* #
 
+TMPFILE=`mktemp /tmp/gmtkbabel.XXX`
+trap "rm -rf $TMPFILE; exit" INT TERM EXIT;
+
 if TIME=`zenity --scale --title="$S_TITLE" --text="$S_SELECT_TIME" \
     --min-value=0 --max-value=999 --value=1 --step 1` && \
     DISTANCE=`zenity --scale --title="$S_TITLE" --text="$S_SELECT_DISTANCE" \
@@ -30,5 +33,7 @@ if TIME=`zenity --scale --title="$S_TITLE" --text="$S_SELECT_TIME" \
     "stop" "$S_FULL_STOP" \
     "overlap" "$S_FULL_OVERLAP"`
 then
-    mtkbabel -p $PORT -r $TIME:$DISTANCE:$SPEED -m $FULL -l on
+    mtkbabel -p $PORT -r $TIME:$DISTANCE:$SPEED -m $FULL -l on \
+    >$TMPFILE 2>&1
+    cat $TMPFILE | zenity --text-info
 fi

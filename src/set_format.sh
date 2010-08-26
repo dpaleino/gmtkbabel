@@ -55,6 +55,9 @@ S_D_DISTANCE=""
 
 # ****** Script (do not edit below this point) ******************************* #
 
+TMPFILE=`mktemp /tmp/gmtkbabel.XXX`
+trap "rm -rf $TMPFILE; exit" INT TERM EXIT;
+
 case `zenity --list --title="$S_TITLE" --text="$S_PRESET" \
     --column "$S_PRESET_TITLE" --column "$S_PRESET_DESC" \
     "$S_P_LIGHT"  "$S_P_LIGHT_D" \
@@ -62,11 +65,17 @@ case `zenity --list --title="$S_TITLE" --text="$S_PRESET" \
     "$S_P_NOSAT"  "$S_P_NOSAT_D" \
     "$S_P_CUSTOM" "$S_P_CUSTOM_D" ` in
     "$S_P_LIGHT" )
-        mtkbabel -p $PORT -o UTC,VALID,LATITUDE,LONGITUDE,-HEIGHT,SPEED,-HEADING,-DSTA,-DAGE,-PDOP,-HDOP,-VDOP,-NSAT,-SID,-ELEVATION,-AZIMUTH,-SNR,RCR,-MILLISECOND,-DISTANCE -l on ;;
+        mtkbabel -p $PORT -o UTC,VALID,LATITUDE,LONGITUDE,-HEIGHT,SPEED,-HEADING,-DSTA,-DAGE,-PDOP,-HDOP,-VDOP,-NSAT,-SID,-ELEVATION,-AZIMUTH,-SNR,RCR,-MILLISECOND,-DISTANCE -l on \
+        >$TMPFILE 2>&1
+        ;;
     "$S_P_FULL" )
-        mtkbabel -p $PORT -o UTC,VALID,LATITUDE,LONGITUDE,HEIGHT,SPEED,HEADING,DSTA,DAGE,PDOP,HDOP,VDOP,NSAT,SID,ELEVATION,AZIMUTH,SNR,RCR,MILLISECOND,DISTANCE -l on ;;
+        mtkbabel -p $PORT -o UTC,VALID,LATITUDE,LONGITUDE,HEIGHT,SPEED,HEADING,DSTA,DAGE,PDOP,HDOP,VDOP,NSAT,SID,ELEVATION,AZIMUTH,SNR,RCR,MILLISECOND,DISTANCE -l on \
+        >$TMPFILE 2>&1
+        ;;
     "$S_P_NOSAT" )
-        mtkbabel -p $PORT -o UTC,VALID,LATITUDE,LONGITUDE,HEIGHT,SPEED,HEADING,DSTA,DAGE,PDOP,HDOP,VDOP,NSAT,-SID,-ELEVATION,-AZIMUTH,-SNR,RCR,MILLISECOND,DISTANCE -l on;;
+        mtkbabel -p $PORT -o UTC,VALID,LATITUDE,LONGITUDE,HEIGHT,SPEED,HEADING,DSTA,DAGE,PDOP,HDOP,VDOP,NSAT,-SID,-ELEVATION,-AZIMUTH,-SNR,RCR,MILLISECOND,DISTANCE -l on \
+        >$TMPFILE 2>&1
+        ;;
     "$S_P_CUSTOM" )
         if FIELDS=`zenity --list --title="$S_TITLE" --text="$S_CONFIRM_ERASE" \
             --checklist --multiple --separator "," \
@@ -92,7 +101,10 @@ case `zenity --list --title="$S_TITLE" --text="$S_PRESET" \
             FALSE MILLISECOND "$S_D_MILLISECOND" \
             FALSE DISTANCE "$S_D_DISTANCE" `
         then
-            mtkbabel -p $PORT -o -UTC,-VALID,-LATITUDE,-LONGITUDE,-HEIGHT,-SPEED,-HEADING,-DSTA,-DAGE,-PDOP,-HDOP,-VDOP,-NSAT,-SID,-ELEVATION,-AZIMUTH,-SNR,-RCR,-MILLISECOND,-DISTANCE -l on
-            mtkbabel -p $PORT -o $FIELDS
+            mtkbabel -p $PORT -o -UTC,-VALID,-LATITUDE,-LONGITUDE,-HEIGHT,-SPEED,-HEADING,-DSTA,-DAGE,-PDOP,-HDOP,-VDOP,-NSAT,-SID,-ELEVATION,-AZIMUTH,-SNR,-RCR,-MILLISECOND,-DISTANCE -l on \
+            >$TMPFILE 2>&1
+            mtkbabel -p $PORT -o $FIELDS >>$TMPFILE 2>&1
         fi ;;
 esac
+
+cat $TMPFILE | zenity --text-info
