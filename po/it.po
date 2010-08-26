@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gmtkbabel 0.1\n"
 "Report-Msgid-Bugs-To: d.paleino@gmail.com\n"
-"POT-Creation-Date: 2010-08-25 08:37+0200\n"
+"POT-Creation-Date: 2010-08-26 10:41+0200\n"
 "PO-Revision-Date: 2010-08-24 19:17+0100\n"
 "Last-Translator: David Paleino <dapal@debian.org>\n"
 "Language-Team: Italian\n"
@@ -18,166 +18,166 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/download.sh:10
+#: src/download.sh:12
 msgid "iBlue 747 download"
 msgstr "Download iBlue 747"
 
-#: src/download.sh:11
+#: src/download.sh:13
 msgid "It seems that the file exists: overwrite it?"
 msgstr "Sembra che il file esista: sovrascriverlo?"
 
-#: src/download.sh:12
+#: src/download.sh:14
 msgid "Operation cancelled"
 msgstr "Operazione annullata"
 
-#: src/erase.sh:10
+#: src/erase.sh:12
 msgid "iBlue 747 erase"
 msgstr "Cancellazione iBlue 747"
 
-#: src/erase.sh:11
+#: src/erase.sh:13
 msgid "Erase logger memory?"
 msgstr "Cancellare la memoria del logger?"
 
-#: src/gmtkbabel:10
+#: src/gmtkbabel:11
 msgid "iBlue 747 manager"
 msgstr "Gestore iBlue 747"
 
-#: src/gmtkbabel:11
+#: src/gmtkbabel:12
 msgid "Select what to do"
 msgstr "Scegli cosa fare"
 
-#: src/gmtkbabel:13
+#: src/gmtkbabel:14
 msgid "Action"
 msgstr "Azione"
 
-#: src/gmtkbabel:14
+#: src/gmtkbabel:15
 msgid "Download data from the logger"
 msgstr "Scarica dati dal logger"
 
-#: src/gmtkbabel:15
+#: src/gmtkbabel:16
 msgid "Erase data in the logger"
 msgstr "Elimina dati dal logger"
 
-#: src/gmtkbabel:16
+#: src/gmtkbabel:17
 msgid "Set logging format"
 msgstr "Imposta formato del log"
 
-#: src/gmtkbabel:17
+#: src/gmtkbabel:18
 msgid "Set logging frequency"
 msgstr "Imposta frequenza del log"
 
-#: src/set_format.sh:10
+#: src/set_format.sh:12
 msgid "iBlue 747 set format"
 msgstr "Impostazione formato iBlue 747"
 
-#: src/set_format.sh:12
+#: src/set_format.sh:14
 msgid "Select a profile"
 msgstr "Scegli un profilo"
 
-#: src/set_format.sh:14
+#: src/set_format.sh:16
 msgid "Preset"
 msgstr "Profilo"
 
-#: src/set_format.sh:15 src/set_format.sh:32
+#: src/set_format.sh:17 src/set_format.sh:34
 msgid "Description"
 msgstr "Descrizione"
 
-#: src/set_format.sh:17
+#: src/set_format.sh:19
 msgid "Light"
 msgstr "Leggero"
 
-#: src/set_format.sh:18
+#: src/set_format.sh:20
 msgid "Essential fields, lots of points"
 msgstr "Campi essenziali, molti punti"
 
-#: src/set_format.sh:20
+#: src/set_format.sh:22
 msgid "Full"
 msgstr "Tutto"
 
-#: src/set_format.sh:21
+#: src/set_format.sh:23
 msgid "Everything: note that satellite data takes lots of space"
 msgstr "Tutto: nota che i dati del satellite occupano molto spazio"
 
-#: src/set_format.sh:23
+#: src/set_format.sh:25
 msgid "No sat data"
 msgstr "No sat"
 
-#: src/set_format.sh:24
+#: src/set_format.sh:26
 msgid "Everything except sat data, reasonable size"
 msgstr "Tutto tranne i dati satellitari, dimensioni ragionevoli"
 
-#: src/set_format.sh:26
+#: src/set_format.sh:28
 msgid "Custom"
 msgstr "Personalizzato"
 
-#: src/set_format.sh:27
+#: src/set_format.sh:29
 msgid "Select which fields should be saved"
 msgstr "Scegli quali dati registrare"
 
-#: src/set_format.sh:29
+#: src/set_format.sh:31
 msgid "Select the fields you want the logger to save"
 msgstr "Scegli quali dati registrare"
 
-#: src/set_format.sh:30
+#: src/set_format.sh:32
 msgid "Save?"
 msgstr "Salva?"
 
-#: src/set_format.sh:31
+#: src/set_format.sh:33
 msgid "Field"
 msgstr "Dato"
 
-#: src/set_format.sh:34
+#: src/set_format.sh:36
 msgid "Timestamp"
 msgstr "Ora"
 
-#: src/set_format.sh:35
+#: src/set_format.sh:37
 msgid "Position fix"
 msgstr "Fix posizione"
 
-#: src/set_format.sh:36
+#: src/set_format.sh:38
 msgid "Latitude"
 msgstr "Latitudine"
 
-#: src/set_format.sh:37
+#: src/set_format.sh:39
 msgid "Longitude"
 msgstr "Longitudine"
 
-#: src/set_format.sh:41
+#: src/set_format.sh:43
 msgid "DGPS Station ID Number."
 msgstr "ID stazione DGPS."
 
-#: src/set_format.sh:42
+#: src/set_format.sh:44
 msgid "Number of seconds since last DGPS update."
 msgstr "Numero di secondi dall'ultimo aggiornamento DGPS."
 
-#: src/set_format.sh:50
+#: src/set_format.sh:52
 msgid "Recording method"
 msgstr "Metodo di memorizzazione"
 
-#: src/set_frequency.sh:10
+#: src/set_frequency.sh:12
 msgid "iBlue 747 Set Frequency"
 msgstr "Imposta frequenza iBlue 747"
 
-#: src/set_frequency.sh:11
+#: src/set_frequency.sh:13
 msgid "Log every n seconds (0 to disable)"
 msgstr "Registra ogni n secondi (0 per disabilitare)"
 
-#: src/set_frequency.sh:12
+#: src/set_frequency.sh:14
 msgid "Log every n meters (0 to disable)"
 msgstr "Registra ogni n metri (0 per disabilitare)"
 
-#: src/set_frequency.sh:13
+#: src/set_frequency.sh:15
 msgid "Log over n km/h (0 to log at any speed)"
 msgstr "Registra ogni n km/h (0 per qualunque velocità)"
 
-#: src/set_frequency.sh:14
+#: src/set_frequency.sh:16
 msgid "On memory full"
 msgstr "Quando la memoria è piena"
 
-#: src/set_frequency.sh:15
+#: src/set_frequency.sh:17
 msgid "Stop logging"
 msgstr "Ferma la registrazione"
 
-#: src/set_frequency.sh:16
+#: src/set_frequency.sh:18
 msgid "Overwrite older points"
 msgstr "Sovrascrivi i punti più vecchi"

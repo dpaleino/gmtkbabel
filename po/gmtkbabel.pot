@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gmtkbabel 0.1\n"
 "Report-Msgid-Bugs-To: d.paleino@gmail.com\n"
-"POT-Creation-Date: 2010-08-25 08:26+0200\n"
+"POT-Creation-Date: 2010-08-26 10:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,166 +17,166 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/download.sh:10
+#: src/download.sh:12
 msgid "iBlue 747 download"
 msgstr ""
 
-#: src/download.sh:11
+#: src/download.sh:13
 msgid "It seems that the file exists: overwrite it?"
 msgstr ""
 
-#: src/download.sh:12
+#: src/download.sh:14
 msgid "Operation cancelled"
 msgstr ""
 
-#: src/erase.sh:10
+#: src/erase.sh:12
 msgid "iBlue 747 erase"
 msgstr ""
 
-#: src/erase.sh:11
+#: src/erase.sh:13
 msgid "Erase logger memory?"
 msgstr ""
 
-#: src/gmtkbabel:10
+#: src/gmtkbabel:11
 msgid "iBlue 747 manager"
 msgstr ""
 
-#: src/gmtkbabel:11
+#: src/gmtkbabel:12
 msgid "Select what to do"
 msgstr ""
 
-#: src/gmtkbabel:13
+#: src/gmtkbabel:14
 msgid "Action"
 msgstr ""
 
-#: src/gmtkbabel:14
+#: src/gmtkbabel:15
 msgid "Download data from the logger"
 msgstr ""
 
-#: src/gmtkbabel:15
+#: src/gmtkbabel:16
 msgid "Erase data in the logger"
 msgstr ""
 
-#: src/gmtkbabel:16
+#: src/gmtkbabel:17
 msgid "Set logging format"
 msgstr ""
 
-#: src/gmtkbabel:17
+#: src/gmtkbabel:18
 msgid "Set logging frequency"
 msgstr ""
 
-#: src/set_format.sh:10
+#: src/set_format.sh:12
 msgid "iBlue 747 set format"
 msgstr ""
 
-#: src/set_format.sh:12
+#: src/set_format.sh:14
 msgid "Select a profile"
 msgstr ""
 
-#: src/set_format.sh:14
+#: src/set_format.sh:16
 msgid "Preset"
 msgstr ""
 
-#: src/set_format.sh:15 src/set_format.sh:32
+#: src/set_format.sh:17 src/set_format.sh:34
 msgid "Description"
 msgstr ""
 
-#: src/set_format.sh:17
+#: src/set_format.sh:19
 msgid "Light"
 msgstr ""
 
-#: src/set_format.sh:18
+#: src/set_format.sh:20
 msgid "Essential fields, lots of points"
 msgstr ""
 
-#: src/set_format.sh:20
+#: src/set_format.sh:22
 msgid "Full"
 msgstr ""
 
-#: src/set_format.sh:21
+#: src/set_format.sh:23
 msgid "Everything: note that satellite data takes lots of space"
 msgstr ""
 
-#: src/set_format.sh:23
+#: src/set_format.sh:25
 msgid "No sat data"
 msgstr ""
 
-#: src/set_format.sh:24
+#: src/set_format.sh:26
 msgid "Everything except sat data, reasonable size"
 msgstr ""
 
-#: src/set_format.sh:26
+#: src/set_format.sh:28
 msgid "Custom"
 msgstr ""
 
-#: src/set_format.sh:27
+#: src/set_format.sh:29
 msgid "Select which fields should be saved"
 msgstr ""
 
-#: src/set_format.sh:29
+#: src/set_format.sh:31
 msgid "Select the fields you want the logger to save"
 msgstr ""
 
-#: src/set_format.sh:30
+#: src/set_format.sh:32
 msgid "Save?"
 msgstr ""
 
-#: src/set_format.sh:31
+#: src/set_format.sh:33
 msgid "Field"
 msgstr ""
 
-#: src/set_format.sh:34
+#: src/set_format.sh:36
 msgid "Timestamp"
 msgstr ""
 
-#: src/set_format.sh:35
+#: src/set_format.sh:37
 msgid "Position fix"
 msgstr ""
 
-#: src/set_format.sh:36
+#: src/set_format.sh:38
 msgid "Latitude"
 msgstr ""
 
-#: src/set_format.sh:37
+#: src/set_format.sh:39
 msgid "Longitude"
 msgstr ""
 
-#: src/set_format.sh:41
+#: src/set_format.sh:43
 msgid "DGPS Station ID Number."
 msgstr ""
 
-#: src/set_format.sh:42
+#: src/set_format.sh:44
 msgid "Number of seconds since last DGPS update."
 msgstr ""
 
-#: src/set_format.sh:50
+#: src/set_format.sh:52
 msgid "Recording method"
 msgstr ""
 
-#: src/set_frequency.sh:10
+#: src/set_frequency.sh:12
 msgid "iBlue 747 Set Frequency"
 msgstr ""
 
-#: src/set_frequency.sh:11
+#: src/set_frequency.sh:13
 msgid "Log every n seconds (0 to disable)"
 msgstr ""
 
-#: src/set_frequency.sh:12
+#: src/set_frequency.sh:14
 msgid "Log every n meters (0 to disable)"
 msgstr ""
 
-#: src/set_frequency.sh:13
+#: src/set_frequency.sh:15
 msgid "Log over n km/h (0 to log at any speed)"
 msgstr ""
 
-#: src/set_frequency.sh:14
+#: src/set_frequency.sh:16
 msgid "On memory full"
 msgstr ""
 
-#: src/set_frequency.sh:15
+#: src/set_frequency.sh:17
 msgid "Stop logging"
 msgstr ""
 
-#: src/set_frequency.sh:16
+#: src/set_frequency.sh:18
 msgid "Overwrite older points"
 msgstr ""
