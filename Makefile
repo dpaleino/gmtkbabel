@@ -62,5 +62,7 @@ clean:
 	$(RM) -rf gmtkbabel.1.gz
 
 dist:
+	git tag -s -f -m "$(VERSION) release" $(VERSION)
+	git tag -s -f -m "Latest release" latest
 	git archive --format=tar --prefix=gmtkbabel-$(VERSION)/ $(VERSION) | \
 	    gzip -9 > gmtkbabel-$(VERSION).tar.gz
