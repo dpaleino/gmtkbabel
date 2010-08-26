@@ -1,0 +1,43 @@
+From: David Paleino <dapal@debian.org>
+Subject: drop shbangs -- not meant to be run directly
+Forwarded: no
+
+---
+ src/download.sh      |    2 --
+ src/erase.sh         |    2 --
+ src/set_format.sh    |    2 --
+ src/set_frequency.sh |    2 --
+ 4 files changed, 8 deletions(-)
+
+--- gmtkbabel.orig/src/download.sh
++++ gmtkbabel/src/download.sh
+@@ -1,5 +1,3 @@
+-#!/bin/sh
+-
+ # Copyright © 2010, Elena Grandi
+ # Copyright © 2010, David Paleino <d.paleino@gmail.com>
+ #
+--- gmtkbabel.orig/src/erase.sh
++++ gmtkbabel/src/erase.sh
+@@ -1,5 +1,3 @@
+-#!/bin/sh
+-
+ # Copyright © 2010, Elena Grandi
+ # Copyright © 2010, David Paleino <d.paleino@gmail.com>
+ #
+--- gmtkbabel.orig/src/set_format.sh
++++ gmtkbabel/src/set_format.sh
+@@ -1,5 +1,3 @@
+-#!/bin/sh
+-
+ # Copyright © 2010, Elena Grandi
+ # Copyright © 2010, David Paleino <d.paleino@gmail.com>
+ #
+--- gmtkbabel.orig/src/set_frequency.sh
++++ gmtkbabel/src/set_frequency.sh
+@@ -1,5 +1,3 @@
+-#!/bin/sh
+-
+ # Copyright © 2010, Elena Grandi
+ # Copyright © 2010, David Paleino <d.paleino@gmail.com>
+ #
