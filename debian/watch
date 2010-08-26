@@ -1,0 +1,3 @@
+version=3
+http://github.com/dpaleino/gmtkbabel/downloads \
+    http://github.com/downloads/dpaleino/gmtkbabel/gmtkbabel-(\d+.*)\.tar\.gz

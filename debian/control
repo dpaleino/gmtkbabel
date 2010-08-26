@@ -1,0 +1,23 @@
+Source: gmtkbabel
+Section: utils
+Priority: optional
+Maintainer: David Paleino <dapal@debian.org>
+Build-Depends: debhelper (>= 7.0.50~)
+ , gettext
+ , gzip
+Standards-Version: 3.9.1
+Homepage: http://dpaleino.github.com/gmtkbabel
+Vcs-Git: git://github.com/dpaleino/gmtkbabel.git
+Vcs-Browser: http://github.com/dpaleino/gmtkbabel
+http://git.debian.org/?p=collab-maint/gmtkbabel.git;a=summary
+
+Package: gmtkbabel
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , zenity
+ , mtkbabel
+Description: graphical interface for mtkbabel
+ gmtkbabel consists of a set of shell scripts which use zenity to
+ provide a graphical user interface to mtkbabel. Mtkbabel is a
+ command-line tool to operate GPS-unit with MTK (Mediatek) chipsets.
