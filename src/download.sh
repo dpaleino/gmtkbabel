@@ -32,6 +32,6 @@ if [ -n "$TRK_NAME" ]; then
     mtkbabel -p $PORT -l off -f "$TRK_NAME" -w -t >> "$TRK_NAME".log
     mtkbabel -p $PORT -l on >> "$TRK_NAME".log
 else
-    zenity --error "$S_CANCEL"
+    zenity --error --text "$S_CANCEL"
 fi
 
