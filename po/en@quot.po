@@ -1,0 +1,204 @@
+# English translations for gmtkbabel package.
+# Copyright (C) 2010 David Paleino <d.paleino@gmail.com>
+# This file is distributed under the same license as the gmtkbabel package.
+# Automatically generated, 2010.
+#
+# All this catalog "translates" are quotation characters.
+# The msgids must be ASCII and therefore cannot contain real quotation
+# characters, only substitutes like grave accent (0x60), apostrophe (0x27)
+# and double quote (0x22). These substitutes look strange; see
+# http://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html
+#
+# This catalog translates grave accent (0x60) and apostrophe (0x27) to
+# left single quotation mark (U+2018) and right single quotation mark (U+2019).
+# It also translates pairs of apostrophe (0x27) to
+# left single quotation mark (U+2018) and right single quotation mark (U+2019)
+# and pairs of quotation mark (0x22) to
+# left double quotation mark (U+201C) and right double quotation mark (U+201D).
+#
+# When output to an UTF-8 terminal, the quotation characters appear perfectly.
+# When output to an ISO-8859-1 terminal, the single quotation marks are
+# transliterated to apostrophes (by iconv in glibc 2.2 or newer) or to
+# grave/acute accent (by libiconv), and the double quotation marks are
+# transliterated to 0x22.
+# When output to an ASCII terminal, the single quotation marks are
+# transliterated to apostrophes, and the double quotation marks are
+# transliterated to 0x22.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gmtkbabel 0.1\n"
+"Report-Msgid-Bugs-To: d.paleino@gmail.com\n"
+"POT-Creation-Date: 2010-08-26 10:41+0200\n"
+"PO-Revision-Date: 2010-08-26 10:41+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en@quot\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/download.sh:12
+msgid "iBlue 747 download"
+msgstr "iBlue 747 download"
+
+#: src/download.sh:13
+msgid "It seems that the file exists: overwrite it?"
+msgstr "It seems that the file exists: overwrite it?"
+
+#: src/download.sh:14
+msgid "Operation cancelled"
+msgstr "Operation cancelled"
+
+#: src/erase.sh:12
+msgid "iBlue 747 erase"
+msgstr "iBlue 747 erase"
+
+#: src/erase.sh:13
+msgid "Erase logger memory?"
+msgstr "Erase logger memory?"
+
+#: src/gmtkbabel:11
+msgid "iBlue 747 manager"
+msgstr "iBlue 747 manager"
+
+#: src/gmtkbabel:12
+msgid "Select what to do"
+msgstr "Select what to do"
+
+#: src/gmtkbabel:14
+msgid "Action"
+msgstr "Action"
+
+#: src/gmtkbabel:15
+msgid "Download data from the logger"
+msgstr "Download data from the logger"
+
+#: src/gmtkbabel:16
+msgid "Erase data in the logger"
+msgstr "Erase data in the logger"
+
+#: src/gmtkbabel:17
+msgid "Set logging format"
+msgstr "Set logging format"
+
+#: src/gmtkbabel:18
+msgid "Set logging frequency"
+msgstr "Set logging frequency"
+
+#: src/set_format.sh:12
+msgid "iBlue 747 set format"
+msgstr "iBlue 747 set format"
+
+#: src/set_format.sh:14
+msgid "Select a profile"
+msgstr "Select a profile"
+
+#: src/set_format.sh:16
+msgid "Preset"
+msgstr "Preset"
+
+#: src/set_format.sh:17 src/set_format.sh:34
+msgid "Description"
+msgstr "Description"
+
+#: src/set_format.sh:19
+msgid "Light"
+msgstr "Light"
+
+#: src/set_format.sh:20
+msgid "Essential fields, lots of points"
+msgstr "Essential fields, lots of points"
+
+#: src/set_format.sh:22
+msgid "Full"
+msgstr "Full"
+
+#: src/set_format.sh:23
+msgid "Everything: note that satellite data takes lots of space"
+msgstr "Everything: note that satellite data takes lots of space"
+
+#: src/set_format.sh:25
+msgid "No sat data"
+msgstr "No sat data"
+
+#: src/set_format.sh:26
+msgid "Everything except sat data, reasonable size"
+msgstr "Everything except sat data, reasonable size"
+
+#: src/set_format.sh:28
+msgid "Custom"
+msgstr "Custom"
+
+#: src/set_format.sh:29
+msgid "Select which fields should be saved"
+msgstr "Select which fields should be saved"
+
+#: src/set_format.sh:31
+msgid "Select the fields you want the logger to save"
+msgstr "Select the fields you want the logger to save"
+
+#: src/set_format.sh:32
+msgid "Save?"
+msgstr "Save?"
+
+#: src/set_format.sh:33
+msgid "Field"
+msgstr "Field"
+
+#: src/set_format.sh:36
+msgid "Timestamp"
+msgstr "Timestamp"
+
+#: src/set_format.sh:37
+msgid "Position fix"
+msgstr "Position fix"
+
+#: src/set_format.sh:38
+msgid "Latitude"
+msgstr "Latitude"
+
+#: src/set_format.sh:39
+msgid "Longitude"
+msgstr "Longitude"
+
+#: src/set_format.sh:43
+msgid "DGPS Station ID Number."
+msgstr "DGPS Station ID Number."
+
+#: src/set_format.sh:44
+msgid "Number of seconds since last DGPS update."
+msgstr "Number of seconds since last DGPS update."
+
+#: src/set_format.sh:52
+msgid "Recording method"
+msgstr "Recording method"
+
+#: src/set_frequency.sh:12
+msgid "iBlue 747 Set Frequency"
+msgstr "iBlue 747 Set Frequency"
+
+#: src/set_frequency.sh:13
+msgid "Log every n seconds (0 to disable)"
+msgstr "Log every n seconds (0 to disable)"
+
+#: src/set_frequency.sh:14
+msgid "Log every n meters (0 to disable)"
+msgstr "Log every n meters (0 to disable)"
+
+#: src/set_frequency.sh:15
+msgid "Log over n km/h (0 to log at any speed)"
+msgstr "Log over n km/h (0 to log at any speed)"
+
+#: src/set_frequency.sh:16
+msgid "On memory full"
+msgstr "On memory full"
+
+#: src/set_frequency.sh:17
+msgid "Stop logging"
+msgstr "Stop logging"
+
+#: src/set_frequency.sh:18
+msgid "Overwrite older points"
+msgstr "Overwrite older points"

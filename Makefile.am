@@ -2,4 +2,4 @@ SUBDIRS = po src
 
 ACLOCAL_AMFLAGS = -I m4
 
-EXTRA_DIST = build-aux/config.rpath po/Makefile.in
+EXTRA_DIST = build-aux/config.rpath

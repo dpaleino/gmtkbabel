@@ -1,12 +1,8 @@
 *~
 Makefile
-Makefile.in*
+Makefile.in
 !po/Makefile.in
 po/*.gmo
-po/*.sed
-po/*.sin
-po/*.header
-ABOUT-NLS
 aclocal.m4
 autom4te.cache/
 build-aux/
@@ -15,7 +11,6 @@ config.status
 configure
 po/Makevars.template
 po/POTFILES
-po/Rules-quot
 po/stamp-po
 
 m4/
