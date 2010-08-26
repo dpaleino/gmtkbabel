@@ -13,6 +13,8 @@ Features:
   - added simple Makefile
   - added manpage
   - dropped dependency on bash, just a POSIX sh is needed now
+  - make it act like a normal application: back to main menu when
+    subscripts are done
 
 
 0.0~20100824

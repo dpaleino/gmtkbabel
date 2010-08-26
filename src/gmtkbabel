@@ -19,12 +19,16 @@ S_SETFREQUENCY="`gettext \"Set logging frequency\"`"
 
 # ****** Script (do not edit below this point) ******************************* #
 
-case `zenity --list --title="$S_TITLE" --text="$S_TEXT" \
+while [ 1 = 1 ]; do
+
+WHAT=`zenity --list --title="$S_TITLE" --text="$S_TEXT" \
     --column "$S_PRESET_TITLE" \
     "$S_DOWNLOAD" \
     "$S_ERASE" \
     "$S_SETFORMAT" \
-    "$S_SETFREQUENCY" ` in
+    "$S_SETFREQUENCY" `
+
+case "$WHAT" in
     "$S_DOWNLOAD" )
         if [ -r download.sh ]; then
             ./download.sh
@@ -53,4 +57,8 @@ case `zenity --list --title="$S_TITLE" --text="$S_TEXT" \
             exec sh /usr/share/gmtkbabel/set_frequency.sh
         fi
         ;;
+    * )
+        break 2
+        ;;
 esac
+done
