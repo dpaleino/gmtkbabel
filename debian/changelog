@@ -1,3 +1,16 @@
+gmtkbabel (0.1-2) UNRELEASED; urgency=medium
+
+  * Trim trailing whitespace.
+  * Use versioned copyright format URI.
+  * Use secure URI in Homepage field.
+  * Bump debhelper from deprecated 7 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Use secure URI in Vcs control headers: Vcs-Browser, Vcs-Git.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Wed, 15 Apr 2020 20:52:16 +0000
+
 gmtkbabel (0.1-1) unstable; urgency=low
 
   * Initial release (Closes: #594476)

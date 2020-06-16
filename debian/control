@@ -2,12 +2,12 @@ Source: gmtkbabel
 Section: utils
 Priority: optional
 Maintainer: David Paleino <dapal@debian.org>
-Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends: debhelper-compat (= 12)
  , gettext
 Standards-Version: 3.9.1
-Homepage: http://dpaleino.github.com/gmtkbabel
-Vcs-Git: git://github.com/dpaleino/gmtkbabel.git
-Vcs-Browser: http://github.com/dpaleino/gmtkbabel
+Homepage: https://dpaleino.github.com/gmtkbabel
+Vcs-Git: https://github.com/dpaleino/gmtkbabel.git
+Vcs-Browser: https://github.com/dpaleino/gmtkbabel
 
 Package: gmtkbabel
 Architecture: all
